@@ -1,0 +1,34 @@
+{
+    "name"       : "express-slash",
+    "description": "Express middleware for people who are anal about trailing slashes.",
+    "version"    : "0.1.0",
+    "homepage"   : "https://github.com/ericf/express-slash",
+
+    "keywords": [
+        "express", "express3", "url", "urls", "slash", "trailing", "slashes",
+        "route", "routes", "routing"
+    ],
+
+    "author": {
+        "name" : "Eric Ferraiuolo",
+        "email": "eferraiuolo@gmail.com",
+        "url"  : "http://ericf.me/"
+    },
+
+    "repository": {
+        "type": "git",
+        "url" : "git://github.com/ericf/express-slash.git"
+    },
+
+    "bugs": {
+        "url": "https://github.com/ericf/express-slash/issues"
+    },
+
+    "engines": {
+        "node": ">=0.8"
+    },
+
+     "dependencies": {},
+
+    "main": "index.js"
+}
