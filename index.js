@@ -4,8 +4,16 @@ module.exports = function (statusCode) {
     statusCode || (statusCode = 301);
 
     return function (req, res, next) {
-        var routes = req.app.routes[req.method.toLowerCase()],
-            url, pathname, search, match;
+        var method = req.method.toLowerCase(),
+            hasSlash, match, pathname, routes, slash, url;
+
+        // Skip when the request is neither a GET or HEAD.
+        if (!(method === 'get' || method === 'head')) {
+            next();
+            return;
+        }
+
+        routes = req.app.routes[method];
 
         // Skip when no routes for the request method.
         if (!routes) {
