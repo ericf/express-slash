@@ -1,6 +1,7 @@
 var parseURL = require('url').parse;
 
 module.exports = function (statusCode) {
+    // Force a permanent redirect, unless otherwise specified.
     statusCode || (statusCode = 301);
 
     return function (req, res, next) {
@@ -24,20 +25,18 @@ module.exports = function (statusCode) {
         url      = parseURL(req.url);
         pathname = url.pathname;
         search   = url.search || '';
+        hasSlash = pathname.charAt(pathname.length - 1) === '/';
 
-        // Skip when the path already has a trailing slash.
-        if (pathname.charAt(pathname.length - 1) === '/') {
-            next();
-            return;
-        }
+        // Adjust the URL's path by either adding or removing a trailing slash.
+        pathname = hasSlash ? pathname.slice(0, -1) : (pathname + '/');
 
         // Look for matching route.
         match = routes.some(function (r) {
-            return r.match(pathname + '/');
+            return r.match(pathname);
         });
 
         if (match) {
-            res.redirect(statusCode, pathname + '/' + search);
+            res.redirect(statusCode, pathname + search);
         } else {
             next();
         }
