@@ -28,7 +28,7 @@
         "node": ">=0.8"
     },
 
-     "dependencies": {},
+    "dependencies": {},
 
-    "main": "index.js"
+    "main": "index"
 }
