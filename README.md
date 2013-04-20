@@ -4,7 +4,7 @@ Express Slash
 [Express][] middleware for people who are anal about trailing slashes.
 
 If you're a good person, then you enable Express' `"strict routing"` because
-you understand the difference between "/about" and "/about/". You know that
+you understand the difference between `/about` and `/about/`. You know that
 these URLs are not the same and they have different meanings. The trouble is,
 being a good person and caring about your trailing slashes is harder than not.
 Plus, you also care about other people, and it would be rude to 404 them when
