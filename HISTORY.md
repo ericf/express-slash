@@ -1,7 +1,7 @@
 Express Slash Change History
 ============================
 
-NEXT
+0.2.0 (2013-04-20)
 ------------------
 
 * Changed the behavior of this middleware to be smarter about whether it should

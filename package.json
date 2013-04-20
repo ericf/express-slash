@@ -1,7 +1,7 @@
 {
     "name"       : "express-slash",
     "description": "Express middleware for people who are anal about trailing slashes.",
-    "version"    : "0.1.0",
+    "version"    : "0.2.0",
     "homepage"   : "https://github.com/ericf/express-slash",
 
     "keywords": [
