@@ -1,6 +1,12 @@
 Express Slash Change History
 ============================
 
+0.2.1 (2013-11-06)
+------------------
+
+* Add "modown" keywork to package.json
+
+
 0.2.0 (2013-04-20)
 ------------------
 

@@ -1,12 +1,12 @@
 {
     "name"       : "express-slash",
     "description": "Express middleware for people who are anal about trailing slashes.",
-    "version"    : "0.2.0",
+    "version"    : "0.2.1",
     "homepage"   : "https://github.com/ericf/express-slash",
 
     "keywords": [
         "express", "express3", "url", "urls", "slash", "trailing", "slashes",
-        "route", "routes", "routing"
+        "route", "routes", "routing", "modown"
     ],
 
     "author": {
