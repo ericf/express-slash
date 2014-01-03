@@ -1,6 +1,14 @@
 Express Slash Change History
 ============================
 
+1.0.0 (2014-01-03)
+------------------
+
+* [!] Stable.
+
+* Defined a previously undefined `var`.
+
+
 0.2.1 (2013-11-06)
 ------------------
 
