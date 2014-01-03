@@ -4,7 +4,7 @@ Express Slash Change History
 1.0.0 (2014-01-03)
 ------------------
 
-* [!] Stable.
+* **[!]** Stable.
 
 * Defined a previously undefined `var`.
 
