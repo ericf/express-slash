@@ -1,3 +1,5 @@
+'use strict';
+
 var parseURL = require('url').parse;
 
 module.exports = function (statusCode) {
@@ -6,7 +8,7 @@ module.exports = function (statusCode) {
 
     return function (req, res, next) {
         var method = req.method.toLowerCase(),
-            hasSlash, match, pathname, routes, slash, url;
+            hasSlash, match, pathname, routes, search, url;
 
         // Skip when the request is neither a GET or HEAD.
         if (!(method === 'get' || method === 'head')) {
