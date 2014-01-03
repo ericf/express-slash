@@ -1,6 +1,9 @@
 Express Slash
 =============
 
+[![Dependency Status](https://gemnasium.com/ericf/express-slash.png)](https://gemnasium.com/ericf/express-slash)
+[![npm Version](https://badge.fury.io/js/express-slash.png)](https://npmjs.org/package/express-slash)
+
 [Express][] middleware for people who are anal about trailing slashes.
 
 If you're a good person, then you enable Express' `"strict routing"` because
