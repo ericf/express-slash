@@ -15,6 +15,14 @@
         "url"  : "http://ericf.me/"
     },
 
+    "contributors": [
+        {
+            "name" : "Bala Clark",
+            "email": "balaclark@gmail.com",
+            "url"  : "http://balaclark.com"
+        }
+    ],
+
     "repository": {
         "type": "git",
         "url" : "git://github.com/ericf/express-slash.git"
@@ -29,6 +37,14 @@
     },
 
     "dependencies": {},
+
+    "devDependencies": {
+        "mocha": "1.18.2",
+        "istanbul": "0.2.x",
+        "express": "3.x",
+        "supertest": "0.11.x",
+        "underscore": "1.6.x"
+    },
 
     "main": "index"
 }
