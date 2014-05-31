@@ -46,5 +46,9 @@
         "underscore": "1.6.x"
     },
 
-    "main": "index"
+    "main": "index",
+
+    "scripts": {
+        "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha test -- --reporter spec"
+    }
 }
