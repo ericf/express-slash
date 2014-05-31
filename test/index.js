@@ -3,7 +3,6 @@
 var express = require('express');
 var slash = require(__dirname + '/../');
 var request = require('supertest');
-var _ = require('underscore');
 var app;
 
 beforeEach(function () {
@@ -38,9 +37,9 @@ it('removes slashes when they are not needed', function (done) {
 });
 
 it('only works with GET requests', function (done) {
-    var done = _.after(2, done);
-    request(app).put('/slash').expect(404, done);
-    request(app).post('/slash').expect(404, done);
+    request(app).put('/slash').expect(404, function () {
+        request(app).post('/slash').expect(404, done);
+    });
 });
 
 it("doesn't do anything if the requested method doesn't have any routes", function (done) {
