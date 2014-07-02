@@ -1,53 +1,52 @@
 {
-    "name"       : "express-slash",
-    "description": "Express middleware for people who are anal about trailing slashes.",
-    "version"    : "1.0.0",
-    "homepage"   : "https://github.com/ericf/express-slash",
-
-    "keywords": [
-        "express", "express3", "url", "urls", "slash", "trailing", "slashes",
-        "route", "routes", "routing", "modown"
-    ],
-
-    "author": {
-        "name" : "Eric Ferraiuolo",
-        "email": "eferraiuolo@gmail.com",
-        "url"  : "http://ericf.me/"
-    },
-
-    "contributors": [
-        {
-            "name" : "Bala Clark",
-            "email": "balaclark@gmail.com",
-            "url"  : "http://balaclark.com"
-        }
-    ],
-
-    "repository": {
-        "type": "git",
-        "url" : "git://github.com/ericf/express-slash.git"
-    },
-
-    "bugs": {
-        "url": "https://github.com/ericf/express-slash/issues"
-    },
-
-    "engines": {
-        "node": ">=0.8"
-    },
-
-    "dependencies": {},
-
-    "devDependencies": {
-        "mocha": "1.18.2",
-        "istanbul": "0.2.x",
-        "express": "3.x",
-        "supertest": "0.11.x"
-    },
-
-    "main": "index",
-
-    "scripts": {
-        "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha test -- --reporter spec"
+  "name": "express-slash",
+  "description": "Express middleware for people who are anal about trailing slashes.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ericf/express-slash",
+  "keywords": [
+    "express",
+    "express3",
+    "url",
+    "urls",
+    "slash",
+    "trailing",
+    "slashes",
+    "route",
+    "routes",
+    "routing",
+    "modown"
+  ],
+  "author": {
+    "name": "Eric Ferraiuolo",
+    "email": "eferraiuolo@gmail.com",
+    "url": "http://ericf.me/"
+  },
+  "contributors": [
+    {
+      "name": "Bala Clark",
+      "email": "balaclark@gmail.com",
+      "url": "http://balaclark.com"
     }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ericf/express-slash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ericf/express-slash/issues"
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^1.20.1",
+    "istanbul": "^0.2.14",
+    "express": "^3.12.1",
+    "supertest": "^0.13.0"
+  },
+  "main": "index",
+  "scripts": {
+    "test": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha test -- --reporter spec"
+  }
 }
