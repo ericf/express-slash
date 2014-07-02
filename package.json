@@ -35,14 +35,11 @@
   "bugs": {
     "url": "https://github.com/ericf/express-slash/issues"
   },
-  "engines": {
-    "node": ">=0.8"
-  },
   "dependencies": {},
   "devDependencies": {
     "mocha": "^1.20.1",
     "istanbul": "^0.2.14",
-    "express": "^3.12.1",
+    "express": "^4.4.5",
     "supertest": "^0.13.0"
   },
   "main": "index",
