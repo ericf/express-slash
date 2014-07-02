@@ -20,6 +20,11 @@ route by either adding or removing a trailing slash to the URL's path, then
 checking the app's router for a matching route for the new URL, in which case it
 will redirect the client (301 by default) to that URL.
 
+**Note:** Choose the correct version of this package for your Express version:
+
+* `v1.x`: Express 3.x
+* `v2.x`: Express 4.x
+
 
 [Express]: https://github.com/visionmedia/express
 
@@ -42,27 +47,33 @@ app's `router` middleware:
 
 ```javascript
 var express = require('express'),
-    slash   = require('express-slash'),
+    slash   = require('express-slash');
 
-    app = express();
+var app = express();
 
 // Because you're the type of developer who cares about this sort of thing!
 app.enable('strict routing');
 
+// Create the router using the same routing options as the app.
+var router = express.Router({
+    caseSensitive: app.get('case sensitive routing'),
+    strict       : app.get('strict routing')
+});
+
 // Add the `slash()` middleware after your app's `router`, optionally specify
 // an HTTP status code to use when redirecting (defaults to 301).
-app.use(app.router);
+app.use(router);
 app.use(slash());
 
-app.get('/', function (req, res) {
+router.get('/', function (req, res) {
     res.send('Home');
 });
 
-app.get('/about/', function (req, res) {
+router.get('/about/', function (req, res) {
     res.send('About');
 });
 
-app.get('/about/people', function (req, res) {
+router.get('/about/people', function (req, res) {
     res.send('People');
 });
 

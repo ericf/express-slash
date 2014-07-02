@@ -1,6 +1,15 @@
 Express Slash Change History
 ============================
 
+2.0.0 (2014-07-02)
+------------------
+
+* __[!]__ Added support for Express 4.x; this version does *not* work with
+  Express 3.x anymore. ([#4][])
+
+[#4]: https://github.com/ericf/express-slash/issues/4 
+
+
 1.0.1 (2014-07-02)
 ------------------
 
