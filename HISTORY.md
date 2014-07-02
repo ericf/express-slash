@@ -1,10 +1,13 @@
 Express Slash Change History
 ============================
 
-1.0.1 (2014-04-26)
+1.0.1 (2014-07-02)
 ------------------
 
-* Added tests
+* Added tests. ([#3][] @balaclark)
+
+[#3]: https://github.com/ericf/express-slash/issues/3
+
 
 1.0.0 (2014-01-03)
 ------------------
