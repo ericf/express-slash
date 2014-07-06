@@ -50,7 +50,7 @@ function testStackForMatch(stack, method, path) {
 
         if (subStack) {
             // Recurse into nested apps/routers.
-            return testStackForMatch(subStack, method, path);
+            return testStackForMatch(subStack, method, path.substr(layer.path.length));
         }
 
         return false;
