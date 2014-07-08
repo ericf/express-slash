@@ -49,8 +49,10 @@ function testStackForMatch(stack, method, path) {
         }
 
         if (subStack) {
+            var trimmedPath = layer.path && path.substr(layer.path.length) || path;
+
             // Recurse into nested apps/routers.
-            return testStackForMatch(subStack, method, path.substr(layer.path.length));
+            return testStackForMatch(subStack, method, trimmedPath);
         }
 
         return false;
