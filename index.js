@@ -49,12 +49,29 @@ function testStackForMatch(stack, method, path) {
         }
 
         if (subStack) {
-            var trimmedPath = layer.path && path.substr(layer.path.length) || path;
+            // Trim any `.use()` prefix.
+            if (layer.path) {
+                path = trimPrefix(path, layer.path);
+            }
 
             // Recurse into nested apps/routers.
-            return testStackForMatch(subStack, method, trimmedPath);
+            return testStackForMatch(subStack, method, path);
         }
 
         return false;
     });
+}
+
+function trimPrefix(path, prefix) {
+    var charAfterPrefix = path.charAt(prefix.length);
+
+    if (charAfterPrefix === '/' || charAfterPrefix === '.') {
+        path = path.substring(prefix.length);
+
+        if (path.charAt(0) !== '/') {
+            path = '/' + path;
+        }
+    }
+
+    return path;
 }
