@@ -88,8 +88,7 @@ when someone navigates to `/about/people/`, they'll be redirected to
 License
 -------
 
-This software is free to use under the MIT license.
-See the [LICENSE file][] for license text and copyright information.
+Code licensed under the BSD license. See [LICENSE file][] file for terms.
 
 
 [LICENSE file]: https://github.com/ericf/express-slash/blob/master/LICENSE
